@@ -1,0 +1,52 @@
+* {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.water {
+  background: #333;
+  height: inherit;
+}
+
+.base {
+  background: red;
+  height: inherit;
+}
+
+.clould {
+  background: rgb(75, 75, 243);
+  height: inherit;
+}
+
+.cube {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+
+.container {
+  animation: MoveLeftRight 15s linear infinite;
+  perspective: 120px;
+  width: 120px;
+  height: 120px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@keyframes MoveLeftRight {
+  0% {
+    left: 0;
+  }
+
+  50% {
+    left: 50%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
